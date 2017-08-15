@@ -1,0 +1,3 @@
+
+(defn test []
+  (println "Lower Git module good"))

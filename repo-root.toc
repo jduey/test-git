@@ -1,0 +1,8 @@
+
+(add-ns up (module "upper-mod.toc"))
+(add-ns lo (module "modules/lower-mod.toc"))
+
+(defn test []
+  (up/test)
+  (lo/test)
+  (println "Git dependency good"))
