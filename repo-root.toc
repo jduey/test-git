@@ -1,8 +1,10 @@
 
 (add-ns up (module "upper-mod.toc"))
 (add-ns lo (module "modules/lower-mod.toc"))
+(add-ns trans (git-dependency "https://github.com/jduey/trans-git.git" "repo-root.toc"))
 
 (defn test []
   (up/test)
   (lo/test)
+  (trans/test)
   (println "Git dependency good"))
