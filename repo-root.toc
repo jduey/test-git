@@ -1,7 +1,8 @@
 
 (add-ns up (module "upper-mod.toc"))
 (add-ns lo (module "modules/lower-mod.toc"))
-(add-ns trans (git-dependency "https://github.com/jduey/trans-git.git" "repo-root.toc"))
+(add-ns trans (git-dependency "https://github.com/jduey/trans-git.git" "repo-root.toc"
+                              :sha "8a6f703"))
 
 (defn test []
   (up/test)
